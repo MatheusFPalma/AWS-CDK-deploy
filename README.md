@@ -80,6 +80,7 @@ O AWS Cloud Development Kit (CDK) é uma estrutura de desenvolvimento de softwar
 
 ## Configuração do Ambiente
 ![Configuração de Ambiente](https://miro.medium.com/v2/resize:fit:720/format:webp/1*47OEvb30iyFc_qkYYrlcEw.png)
+
 **Pré-requisitos:**
 - Node.js (versão 18.x ou superior)
 - AWS CLI configurada
