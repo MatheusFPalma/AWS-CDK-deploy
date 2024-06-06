@@ -1,7 +1,8 @@
 # Projeto de Gerenciamento de Frota com AWS CDK
-
+![Título e Descrição Geral](https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fiftirsp3uzc3ww2z7s3k.png)
 ## Descrição Geral
 Este projeto demonstra a criação de um sistema de gerenciamento de frota utilizando o AWS CDK (Cloud Development Kit). O sistema inclui um backend para registrar e gerenciar veículos usando AWS Lambda, DynamoDB e API Gateway, e um frontend em React para interagir com o backend.
+Possui caráter acadêmico, para desenvolvedores que queiram iniciar estudos em AWS CDK.
 
 ## Índice
 - [Título e Descrição Geral](#título-e-descrição-geral)
@@ -11,13 +12,12 @@ Este projeto demonstra a criação de um sistema de gerenciamento de frota utili
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Detalhamento do Backend](#detalhamento-do-backend)
 - [Detalhamento do Frontend](#detalhamento-do-frontend)
-- [Conceitos Avançados do AWS CDK](#conceitos-avançados-do-aws-cdk)
 - [Fontes e Referências](#fontes-e-referências)
 - [Autores e Contribuições](#autores-e-contribuições)
 - [Licença](#licença)
 
 ## Conceitos Básicos do AWS CDK
-
+![Conceitos Básicos do AWS CDK](https://d2908q01vomqb2.cloudfront.net/7719a1c782a1ba91c031a682a0a2f8658209adbf/2020/05/14/Picture1-4.png)
 **O que é o AWS CDK:**
 O AWS Cloud Development Kit (CDK) é uma estrutura de desenvolvimento de software de código aberto para definir a infraestrutura de nuvem como código (IaC) com linguagens de programação familiares. O CDK permite que você modele e provisiona recursos de aplicativos em nuvem usando linguagens de programação conhecidas, como TypeScript, Python, Java, e C#.
 
@@ -31,10 +31,10 @@ O AWS Cloud Development Kit (CDK) é uma estrutura de desenvolvimento de softwar
 - **Constructs:** Blocos de construção do AWS CDK. Constructs representam uma parte discreta da sua infraestrutura, como um bucket S3 ou uma função Lambda.
 - **Assets:** Recursos externos, como código de função Lambda ou contêineres Docker, que são integrados ao seu app CDK.
 
-**Serviços AWS Principais:**
-
+**Serviços AWS:**
+![Serviços AWS](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2020/06/17/Architecture-of-the-application.png)
 - **AWS Lambda:**
-  - **O que é:** AWS Lambda é um serviço de computação que permite executar código sem provisionar ou gerenciar servidores. Você paga apenas pelo tempo de computação consumido.
+  - **O que é:** AWS Lambda é um serviço que permite executar código sem provisionar ou gerenciar servidores. Você paga apenas pelo tempo de computação consumido.
   - **Vantagens:** Escalabilidade automática, custo-efetividade, fácil integração com outros serviços AWS.
   - **Exemplo de Uso no Projeto:**
     ```typescript
@@ -57,7 +57,7 @@ O AWS Cloud Development Kit (CDK) é uma estrutura de desenvolvimento de softwar
     const fleetTable = new dynamodb.Table(this, 'FleetTable', {
       partitionKey: { name: 'vehicleId', type: dynamodb.AttributeType.STRING },
       tableName: `FleetTable-${this.stackName}`,
-      removalPolicy: cdk.RemovalPolicy.DESTROY // Apenas para fins de desenvolvimento
+      removalPolicy: cdk.RemovalPolicy.DESTROY
     });
     ```
 
@@ -79,7 +79,7 @@ O AWS Cloud Development Kit (CDK) é uma estrutura de desenvolvimento de softwar
     ```
 
 ## Configuração do Ambiente
-
+![Configuração de Ambiente](https://miro.medium.com/v2/resize:fit:720/format:webp/1*47OEvb30iyFc_qkYYrlcEw.png)
 **Pré-requisitos:**
 - Node.js (versão 18.x ou superior)
 - AWS CLI configurada
@@ -148,7 +148,7 @@ Para evitar problemas de permissões, é recomendado executar os comandos do AWS
 - Coloque ```cd <Caminho da pasta>```.
 
 ### Como Obter as Credenciais da AWS
-
+![Obter as Credenciais da AWS](https://wallydata.blog/wp-content/uploads/2023/05/image-4.png?w=1024)
 Para configurar o AWS CLI, você precisa de credenciais de acesso à sua conta AWS. Aqui estão os passos para obter essas credenciais:
 
 1. **Acessar o Console da AWS:**
@@ -217,16 +217,6 @@ cdk deploy
 npm install
 npm start
 ```	
-
-### Conceitos Avançados do AWS CDK
-
-**Uso de Contextos e Variáveis de Ambiente:**
-- Como usar contextos para configurar variáveis em diferentes ambientes.
-- Exemplos de variáveis de ambiente no CDK.
-
-**Melhorias e Boas Práticas:**
-- Estratégias para estruturar stacks grandes.
-- Como criar constructs reutilizáveis.
 
 ### Fontes e Referências
 
