@@ -245,7 +245,6 @@ npm start
 4. Push para a branch (`git push origin feature/nome-da-feature`).
 5. Abra um Pull Request.
 
-Para mais detalhes, consulte o nosso Guia de Contribuição.
 
 ### Licença
 
