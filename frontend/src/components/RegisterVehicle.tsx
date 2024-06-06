@@ -4,7 +4,7 @@ import axios from 'axios';
 const RegisterVehicle: React.FC = () => {
   const [vehicleId, setVehicleId] = useState('');
   const [location, setLocation] = useState('');
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState('Active');
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -31,7 +31,10 @@ const RegisterVehicle: React.FC = () => {
       </div>
       <div>
         <label>Status:</label>
-        <input type="text" value={status} onChange={(e) => setStatus(e.target.value)} required />
+        <select value={status} onChange={(e) => setStatus(e.target.value)} required>
+          <option value="Active">Ativo</option>
+          <option value="Inactive">Inativo</option>
+        </select>
       </div>
       <button type="submit">Registrar Veículo</button>
     </form>
