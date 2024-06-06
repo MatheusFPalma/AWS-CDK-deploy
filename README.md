@@ -1,7 +1,7 @@
 # Fleet Management Project with AWS CDK
 ![Title and General Description](https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fiftirsp3uzc3ww2z7s3k.png)
 
-## 📚 Please choose your language / Por favor, escolha seu idioma:
+## 📚 Please choose your language to continue / Por favor, escolha seu idioma para continuar:
 [![Leia em Português](https://img.shields.io/badge/Leia%20em-Português-blue)](README_PT.md)
 [![Read in English](https://img.shields.io/badge/Read%20in-English-green)](README_EN.md)
 
