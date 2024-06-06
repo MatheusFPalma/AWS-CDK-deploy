@@ -7,7 +7,7 @@ const VehicleList: React.FC = () => {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await axios.get('https://<api-id>.execute-api.<region>.amazonaws.com/prod/vehicle');
+        const response = await axios.get('https://1x6r9xb8vl.execute-api.us-east-1.amazonaws.com/prod/vehicle');
         setVehicles(response.data);
       } catch (error) {
         console.error('Erro ao buscar os veículos', error);

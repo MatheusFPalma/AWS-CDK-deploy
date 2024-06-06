@@ -6,7 +6,7 @@ import VehicleList from './components/VehicleList';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>Facilita Fleet Management</h1>
+      <h1>Fleet Management</h1>
       <RegisterVehicle />
       <VehicleList />
     </div>
